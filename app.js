@@ -35,6 +35,7 @@ function addTodo(e) {
   todoDiv.appendChild(trashButton);
 
   if (todoInput.value) {
+    validity.innerText = "";
     todoList.appendChild(todoDiv);
     savedTodos(todoInput.value);
   } else {
